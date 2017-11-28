@@ -68,8 +68,6 @@ template $input $output
 
 cat $output
 
-exit 1
-
 services=$(aws ecs describe-services \
    --profile ${STEP_AWS_PROFILE} \
    --cluster ${STEP_CLUSTER} \
