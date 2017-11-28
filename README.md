@@ -14,7 +14,7 @@ deploy:
         cluster-name: $STEP_CLUSTER
         service-name: $STEP_SERVICE_NAME
         task-definition-name: $STEP_TASK_DEFINITION_NAME        
-        task-count: $STEP_DESIRED_COUNT
+        desired-count: $STEP_DESIRED_COUNT
         service-template: ecs_service.json.template
 
 ```
