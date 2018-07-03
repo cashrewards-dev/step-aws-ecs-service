@@ -1,35 +1,35 @@
 name: aws-ecs-service
-version: 0.0.2
-description: Deploy Service to AWS ECS
-keywords:
+version: 0.1.0
+summary: Deploy Service to AWS ECS
+tags:
   - aws
   - ecs
   - service
 properties:
   # Step 1: Configuring AWS
-  key:
+  - name: key
     type: string
     required: true
-  secret:
+  - name: secret
     type: string
     required: true
-  region:
+  - name: region
     type: string
     required: false
 
   # Step 2: Defining service
-  cluster-name:
+  - name: cluster-name
     type: string
     required: true
-  service-name:
+  - name: service-name
     type: string
     required: true
-  task-definition-name:
+  - name: task-definition-name
     type: string
     required: true    
-  desired-count:
+  - name: desired-count
     type: string
     required: true  
-  service-template:
+  - name: service-template
     type: string
     required: true
